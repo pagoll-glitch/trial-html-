@@ -1,0 +1,399 @@
+
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   TOP STATUS BAR
+================================= */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 4%;
+
+    color: #00ff9d;
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ff4fd8;
+}
+
+.health-bar {
+    width: 70px;
+    height: 10px;
+
+    background-color: #00ff9d;
+
+    border: 2px solid white;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 360px;
+
+    margin: 0 8%;
+
+    border: 3px solid #00ff9d;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #000;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    color: #baff9b;
+
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: clamp(35px, 7vw, 80px);
+
+    color: #ff4fd8;
+
+    text-shadow:
+        4px 4px 0px #00ff9d;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 35px;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+
+    background-color: #00ff9d;
+
+    color: white;
+
+    border: 3px solid white;
+
+    font-family: monospace;
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow:
+        5px 5px 0px #ff4fd8;
+}
+
+.hero-content button:hover {
+    background-color: #ff4fd8;
+}
+
+
+/* =================================
+   PLAYER SECTION
+================================= */
+
+.player-section {
+    position: relative;
+
+    padding: 80px 7%;
+
+    min-height: 850px;
+
+    background-color: #080808;
+
+    background-image:
+        radial-gradient(#292929 1px, transparent 1px);
+
+    background-size: 10px 10px;
+}
+
+.player-section > h2 {
+    font-size: 55px;
+
+    color: #ff4fd8;
+
+    line-height: 0.9;
+
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #ff4fd8;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+.player-section > h3 {
+    color: #00ff9d;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   GAME CONSOLE
+================================= */
+
+.game-console {
+    width: 300px;
+    height: 220px;
+
+    background-color: #ff1493;
+
+    border: 5px solid #ff4fd8;
+
+    border-radius: 12px;
+
+    margin: 20px auto 60px;
+
+    padding: 20px;
+
+    box-shadow:
+        8px 8px 0px #b40076;
+}
+
+.screen {
+    width: 100%;
+    height: 130px;
+
+    background-color: #245b3d;
+
+    border: 5px solid #111;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-align: center;
+}
+
+.screen h4 {
+    color: #ffff66;
+
+    margin-bottom: 10px;
+}
+
+.screen p {
+    font-size: 15px;
+}
+
+
+/* =================================
+   INFORMATION BOXES
+================================= */
+
+.info-box {
+    background-color: #ff9bdc;
+
+    color: #24102b;
+
+    border: 4px solid #ff4fd8;
+
+    padding: 20px;
+
+    margin: 25px auto;
+
+    max-width: 350px;
+
+    box-shadow:
+        5px 5px 0px #b40076;
+}
+
+.info-box h4 {
+    background-color: #ffff66;
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    color: #5a1450;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+.info-box p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 5px;
+}
+
+
+/* =================================
+   SKILLS BOX
+================================= */
+
+.skills {
+    border-color: #ff4fd8;
+}
+
+
+/* =================================
+   TRAINING BOX
+================================= */
+
+.training {
+    border-color: #ff4fd8;
+}
+
+
+/* =================================
+   SKILL MASTER BOX
+================================= */
+
+.skill-master {
+    border-color: #ff4fd8;
+}
+
+
+/* =================================
+   MISSIONS
+================================= */
+
+.missions {
+    padding: 70px 7%;
+
+    background-color: #080808;
+
+    background-image:
+        radial-gradient(#292929 1px, transparent 1px);
+
+    background-size: 10px 10px;
+
+    text-align: center;
+}
+
+.missions h2 {
+    font-size: 48px;
+
+    color: #ffff66;
+
+    margin-bottom: 40px;
+
+    text-shadow:
+        4px 4px 0px #ff4fd8;
+}
+
+.mission-card {
+    background-color: #ff9bdc;
+
+    color: #24102b;
+
+    border: 4px solid #ff4fd8;
+
+    padding: 25px;
+
+    margin: 25px auto;
+
+    max-width: 400px;
+
+    box-shadow:
+        6px 6px 0px #b40076;
+}
+
+.mission-card h3 {
+    color: #5a1450;
+
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    font-size: 15px;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        font-size: 10px;
+
+        padding: 15px;
+    }
+
+    .hero {
+        margin: 0 4%;
+
+        min-height: 280px;
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+
+        letter-spacing: 2px;
+    }
+
+    .hero-content button {
+        font-size: 18px;
+    }
+
+    .player-section {
+        padding: 50px 5%;
+    }
+
+    .player-section > h2 {
+        font-size: 45px;
+    }
+
+    .game-console {
+        width: 260px;
+    }
+
+    .info-box {
+        max-width: 100%;
+    }
+
+    .missions h2 {
+        font-size: 38px;
+    }
+
+}
